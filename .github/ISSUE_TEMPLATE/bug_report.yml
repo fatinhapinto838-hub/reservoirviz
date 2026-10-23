@@ -1,0 +1,28 @@
+name: Bug report / 问题反馈
+description: Report a reproducible CSV, chart, or installation issue.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened? / 发生了什么？
+      description: Include expected behavior and steps to reproduce.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 环境
+      description: OS, Python version, ReservoirViz version, source software/module and units.
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Minimal example / 最小示例
+      description: Attach only synthetic or publishable data. Remove private information.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error message / 错误信息
+      render: text
